@@ -1,0 +1,37 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Survey Q.3</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-img width="400" height="300" src="http://1.bp.blogspot.com/-I3ozQ2Js5fM/UG7_rsPvUNI/AAAAAAAAAuw/86BQWRI9Uz4/s1600/diff+and+easy+2.jpg"></ion-img>
+
+  <H3>How difficult would you rate your course?</H3>
+  <ion-list radio-group [(ngModel)]="myStatus2">
+
+
+    <ion-item>
+      <ion-label>1.Difficult</ion-label>
+      <ion-radio value="difficult"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>2.Manageable</ion-label>
+      <ion-radio value="manageable"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>3.Easy</ion-label>
+      <ion-radio value="easy"></ion-radio>
+    </ion-item>
+
+  </ion-list>
+
+   <button ion-button (click)="openSurveyThreePage()">Confirm</button>
+  
+</ion-content>

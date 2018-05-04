@@ -1,0 +1,38 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Survey Q.2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-img width="400" height="300" src="https://www.itsligo.ie/files/2010/06/Facilities.jpg"></ion-img>
+
+  <H3>Are you satisfied with the facilities provides by you college?</H3>
+  <ion-list radio-group [(ngModel)]="myStatus1">
+
+
+    <ion-item>
+      <ion-label>Yes</ion-label>
+      <ion-radio value="yes"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Contempt</ion-label>
+      <ion-radio value="contempt"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>No</ion-label>
+      <ion-radio value="no"></ion-radio>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button (click)="openSurveyTwoPage()">Confirm</button>
+  
+</ion-content>

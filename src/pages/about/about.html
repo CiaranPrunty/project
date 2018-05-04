@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Survey Q.1
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-img width="400" height="300" src="https://amhsnewspaper.com/wp-content/uploads/2018/02/17DAY2rl_00782-1.jpg"></ion-img>
+
+  <H3>What college year are you in?</H3>
+
+  <ion-list radio-group [(ngModel)]="myStatus">
+
+    <ion-item>
+      <ion-label>First Year</ion-label>
+      <ion-radio value="firstYear"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Second Year</ion-label>
+      <ion-radio value="secondYear"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Third Year</ion-label>
+      <ion-radio value="thirdYear"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fourth Year</ion-label>
+      <ion-radio value="fourthYear"></ion-radio>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button (click)="openSurveyOnePage()">Confirm</button>
+</ion-content>
+
