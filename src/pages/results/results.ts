@@ -19,7 +19,7 @@ import { SurveyFourPage } from "../survey-four/survey-four";
   templateUrl: 'results.html',
 })
 export class ResultsPage {
-
+//all user input answers here
   constructor(public navCtrl: NavController, public navParams: NavParams,private storage:Storage,private storage1:Storage,private storage2:Storage,private storage3:Storage,private storage4:Storage) {
   }
 
@@ -33,7 +33,7 @@ export class ResultsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ResultsPage');
   }
-
+//results stored
   ionViewWillEnter(){
     this.storage.get("ResultOne")
     .then((data) =>{

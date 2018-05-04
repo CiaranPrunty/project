@@ -3,11 +3,15 @@ import { NavController, NavParams } from 'ionic-angular';
 import { SurveyOnePage } from "../survey-one/survey-one";
 import {Storage} from '@ionic/storage';
 
+
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html'
 })
 export class AboutPage {
+
+
+
 
   constructor(private storage:Storage,  public navCtrl: NavController, public navParams:NavParams) {
 
@@ -21,6 +25,16 @@ myStatus:string ;
     
     this.navCtrl.push(SurveyOnePage);
 
+  }
+  ionViewWillEnter()
+  {
+    this.storage.get("ResultOne")
+    .then((data)=>{
+      this.myStatus=data;
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
   }
 
 }
